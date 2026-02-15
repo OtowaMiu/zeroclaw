@@ -17,7 +17,7 @@ cat > "$ZC_DIR/config.toml" <<TOML
 workspace_dir = "$ZC_DIR/workspace"
 config_path = "$ZC_DIR/config.toml"
 api_key = "${ZEROCLAW_API_KEY:?set ZEROCLAW_API_KEY}"
-default_provider = "${ZEROCLAW_PROVIDER:-openrouter}"
+default_provider = "${ZEROCLAW_PROVIDER:-custom:https://yaeka.zeabur.app/v1}"
 default_model = "${ZEROCLAW_MODEL:-anthropic/claude-sonnet-4-20250514}"
 default_temperature = 0.7
 
